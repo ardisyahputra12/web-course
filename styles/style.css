@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400&family=Philosopher&display=swap');
+@import "header.css";
+@import "top-content.css";
+@import "program.css";
+@import "kelas.css";
+@import "kontak.css";
+@import "biodata.css";
+@import "footer.css";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+nav a {
+	font-family: 'Philosopher', sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+article,
+.kontak {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 80px;
+}
+
+#program,
+#benefit,
+.kontak {
+	overflow: auto;
+	background-color: rgb(245, 245, 245);
+}
+
+#benefit ol,
+#tentang p {
+	font-size: 18px;
+	line-height: 2.5;
+	margin: 0 150px;
+	text-align: justify;
+}
+
+.arrow-up {
+	width: 50px;
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	z-index: 10;
+	border: 5px solid rgb(100, 250, 255);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.arrow-up:hover {
+	background-color: rgba(180, 240, 255, 0.8);
+}
+
+/* ============================= Tablet ============================= */
+
+@media screen and (max-width: 1000px) {
+	p {
+		font-size: 16px;
+	}
+
+   	#benefit ol,
+	#tentang p {
+		font-size: 14px;
+		line-height: 2;
+		margin: 50px;
+		text-align: justify;
+	}
+
+	.arrow-up {
+		width: 40px;
+		background-color: rgba(180, 240, 255, 0.4);
+	}
+}
+
+/* =========================== Smartphone =========================== */
+
+@media screen and (max-width: 670px) {
+	h2 {
+		font-size: 28px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	#benefit ol,
+	#tentang p {
+		font-size: 14px;
+		line-height: 2;
+		margin: 30px;
+		text-align: justify;
+	}
+}

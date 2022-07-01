@@ -1,0 +1,75 @@
+form {
+	margin: 0 auto;
+	text-align: center;
+}
+
+input,
+textarea {
+	font-family: sans-serif;
+	width: 50%;
+	box-shadow: 3px 5px 8px 2px #777;
+	margin: 15px;
+	padding: 20px;
+	border-radius: 10px;
+	font-size: 14px;
+	border: none;
+}
+
+textarea {
+	height: 170px;
+}
+
+input:focus,
+textarea:focus {
+	box-shadow: 3px 5px 8px 2px rgb(180,240,255);
+	outline: none;
+	border: 1px solid #000;
+}
+
+input[type="submit"] {
+	width: 200px;
+	color: #666;
+	background-color: #fff;
+	margin: 50px auto 0;
+	padding: 10px;
+	border-radius: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	border-style: outset;
+	border-color: rgb(180, 240, 255);
+}
+
+input[type="submit"]:hover {
+	background-color: rgb(180, 240, 255);
+	border-style: inset;
+}
+
+input[type="submit"]:active {
+	position: relative;
+	top: 5px;
+	box-shadow: none;
+}
+
+@media screen and (max-width: 1000px) {
+	input,
+	textarea {
+		width: 85%;
+		padding: 18px;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	input,
+	textarea {
+		margin: 10px;
+		padding: 12px;
+		font-size: 14px;
+	}
+
+	input[type="submit"] {
+		width: 140px;
+		font-size: 16px;
+		padding: 7px;
+	}
+}

@@ -1,0 +1,17 @@
+footer {
+	background-color: #888;
+	margin: 0;
+	padding: 2px;
+}
+
+footer p {
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+}
+
+@media screen and (max-width: 670px){
+	footer p {
+			font-size: 12px;
+		}
+}
